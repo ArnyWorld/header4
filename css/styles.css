@@ -118,5 +118,80 @@ body{
     display: none;
 }
 
+/*responsive*/
 
+@media (max-width:768px){
+    
+    .navigationBar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*menuMovil*/
+
+    .logoMovil img{
+        display: block;
+    }
+
+    .hamburguer{
+        display: block;
+        align-self: flex-end;
+    }
+    /*--------------*/
+    
+    .banner{
+        clip-path: polygon(0% 0%, 0% 100%, 50% 95%, 100% 100%, 100% 0%);
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+
+    .logoNavigation{
+        order: 1;
+        margin-bottom: 15px;
+    }
+
+    .logoNavigation .navigation a{
+        font-weight: 500;
+    }
+
+    .logoNavigation .logo{
+        display: none;
+    }
+
+    .login{
+        order:3;
+    }
+
+    .logoNavigation .navigation{
+        flex-direction: column;
+    }
+
+    .login .user{
+        display: none;
+    }
+    .nav .login .loginLink{
+        display: block;
+        color: var(--colorWhite);
+        background-color: var(--colorDark);
+        font-family: var(--fontPrimary);
+        
+        padding: 3px 25px;
+        border-radius: 8px;
+        border:2px solid var(--colorDark);
+    }
+
+    .nav .redes{
+        order:2;
+        margin-bottom: 15px;
+        width: 30%;
+        justify-content: space-between;
+    }
+
+    .redes a i{
+        font-size: 16px;
+    }
+}
 
